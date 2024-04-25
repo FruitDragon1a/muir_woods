@@ -1,25 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zHT-nA-fOL">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="muir_woods" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="muir_woods" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d0w-iV-vdH">
-                                <rect key="frame" x="16" y="59" width="361" height="759"/>
+                                <rect key="frame" x="16" y="59" width="361" height="710"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VEB-0m-1cU">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="759"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VEB-0m-1cU">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="100"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="US-NationalParkService-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="cfM-cq-6bc">
+                                                <rect key="frame" x="0.0" y="0.0" width="173" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="ppF-6K-7if"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muir Woods National Monument" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qme-dE-m3b">
+                                                <rect key="frame" x="188" y="0.0" width="173" height="100"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="umh-E3-8AG">
+                                        <rect key="frame" x="0.0" y="100" width="361" height="610"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blm-64-RBJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="180"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="180" id="Bsz-Rw-414"/>
+                                                </constraints>
+                                                <string key="text">Muir Woods National Monument is in California, in Marin County. It’s famous for its giant redwood trees, for the long hikes amidst peaceful wooded forests, for the cool and misty atmosphere.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b1830f59-3201-4dc1-8e98-b49a490160a1-banner" translatesAutoresizingMaskIntoConstraints="NO" id="jbn-NM-lTE">
+                                                <rect key="frame" x="0.0" y="180" width="361" height="175"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="175" id="eXc-IF-7Bh"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visit the Monument!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaL-Sj-u8j">
+                                                <rect key="frame" x="0.0" y="355" width="361" height="47.666666666666686"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f7" translatesAutoresizingMaskIntoConstraints="NO" id="Xou-ts-ITc">
+                                                <rect key="frame" x="0.0" y="402.66666666666663" width="361" height="207.33333333333337"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="207.41" id="D6E-Rc-GQR"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
@@ -33,10 +83,91 @@
                             <constraint firstItem="d0w-iV-vdH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kfK-vK-LBr"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="ssx-WP-qgN">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.32824427480909" y="4.9295774647887329"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="Vx3-R5-zaa">
+            <objects>
+                <viewController id="j4Y-Ad-HFj" customClass="MapViewController" customModule="muir_woods" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ifh-hD-Z72">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pw1-h5-qJW">
+                                <rect key="frame" x="0.0" y="59" width="393" height="666"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                                <connections>
+                                    <outlet property="delegate" destination="j4Y-Ad-HFj" id="MVb-fi-8LB"/>
+                                </connections>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3cf-fm-Qzq">
+                                <rect key="frame" x="0.0" y="733" width="393" height="32"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yd0-2j-Zkb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pw1-h5-qJW" firstAttribute="leading" secondItem="yd0-2j-Zkb" secondAttribute="leading" id="2gJ-fb-mxN"/>
+                            <constraint firstItem="3cf-fm-Qzq" firstAttribute="top" secondItem="Pw1-h5-qJW" secondAttribute="bottom" constant="8" id="4hI-e2-ngA"/>
+                            <constraint firstItem="3cf-fm-Qzq" firstAttribute="top" secondItem="Pw1-h5-qJW" secondAttribute="bottom" constant="8" id="Hhg-qo-AgF"/>
+                            <constraint firstItem="yd0-2j-Zkb" firstAttribute="trailing" secondItem="Pw1-h5-qJW" secondAttribute="trailing" id="KRO-Wq-XWq"/>
+                            <constraint firstAttribute="trailing" secondItem="3cf-fm-Qzq" secondAttribute="trailing" id="QnF-2G-AFU"/>
+                            <constraint firstItem="3cf-fm-Qzq" firstAttribute="leading" secondItem="yd0-2j-Zkb" secondAttribute="leading" id="Qpq-7O-IvV"/>
+                            <constraint firstItem="3cf-fm-Qzq" firstAttribute="leading" secondItem="yd0-2j-Zkb" secondAttribute="leading" id="XqH-yM-bpQ"/>
+                            <constraint firstItem="yd0-2j-Zkb" firstAttribute="trailing" secondItem="3cf-fm-Qzq" secondAttribute="trailing" id="aYB-Rb-EN2"/>
+                            <constraint firstItem="Pw1-h5-qJW" firstAttribute="top" secondItem="yd0-2j-Zkb" secondAttribute="top" id="jhO-qU-uHk"/>
+                            <constraint firstItem="3cf-fm-Qzq" firstAttribute="top" secondItem="Pw1-h5-qJW" secondAttribute="bottom" constant="8" id="p0A-4q-ON4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" id="BFd-vK-M3u"/>
+                    <connections>
+                        <outlet property="mapView" destination="Pw1-h5-qJW" id="iyC-Rq-ZQw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0qH-Ce-ewM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1661.8320610687022" y="32.394366197183103"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="HgW-zw-Utd">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="zHT-nA-fOL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nJ6-7W-qJE">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="P7g-w5-C9X"/>
+                        <segue destination="j4Y-Ad-HFj" kind="relationship" relationship="viewControllers" id="gEM-cE-DEE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGT-Oa-bcs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20.610687022900763" y="4.9295774647887329"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="US-NationalParkService-Logo" width="553" height="720"/>
+        <image name="b1830f59-3201-4dc1-8e98-b49a490160a1-banner" width="1600" height="900"/>
+        <image name="f7" width="669" height="446"/>
+        <image name="home" width="24" height="24"/>
+        <image name="map" width="24" height="24"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

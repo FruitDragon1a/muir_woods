@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		F3D44ED82BD9D79C00270053 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D44ED72BD9D79C00270053 /* AppDelegate.swift */; };
 		F3D44EDA2BD9D79C00270053 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D44ED92BD9D79C00270053 /* SceneDelegate.swift */; };
-		F3D44EDC2BD9D79C00270053 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D44EDB2BD9D79C00270053 /* ViewController.swift */; };
+		F3D44EDC2BD9D79C00270053 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D44EDB2BD9D79C00270053 /* HomeViewController.swift */; };
 		F3D44EDF2BD9D79C00270053 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F3D44EDE2BD9D79C00270053 /* Base */; };
 		F3D44EE12BD9D79E00270053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D44EE02BD9D79E00270053 /* Assets.xcassets */; };
 		F3D44EE42BD9D79E00270053 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F3D44EE32BD9D79E00270053 /* Base */; };
 		F3D44EEF2BD9D79E00270053 /* muir_woodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D44EEE2BD9D79E00270053 /* muir_woodsTests.swift */; };
 		F3D44EF92BD9D79E00270053 /* muir_woodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D44EF82BD9D79E00270053 /* muir_woodsUITests.swift */; };
 		F3D44EFB2BD9D79E00270053 /* muir_woodsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D44EFA2BD9D79E00270053 /* muir_woodsUITestsLaunchTests.swift */; };
+		F3D44F082BD9FD1200270053 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D44F072BD9FD1200270053 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		F3D44ED42BD9D79C00270053 /* muir_woods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = muir_woods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D44ED72BD9D79C00270053 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3D44ED92BD9D79C00270053 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3D44EDB2BD9D79C00270053 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3D44EDB2BD9D79C00270053 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3D44EDE2BD9D79C00270053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3D44EE02BD9D79E00270053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3D44EE32BD9D79E00270053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		F3D44EF42BD9D79E00270053 /* muir_woodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = muir_woodsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D44EF82BD9D79E00270053 /* muir_woodsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muir_woodsUITests.swift; sourceTree = "<group>"; };
 		F3D44EFA2BD9D79E00270053 /* muir_woodsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = muir_woodsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3D44F072BD9FD1200270053 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,8 @@
 			children = (
 				F3D44ED72BD9D79C00270053 /* AppDelegate.swift */,
 				F3D44ED92BD9D79C00270053 /* SceneDelegate.swift */,
-				F3D44EDB2BD9D79C00270053 /* ViewController.swift */,
+				F3D44EDB2BD9D79C00270053 /* HomeViewController.swift */,
+				F3D44F072BD9FD1200270053 /* MapViewController.swift */,
 				F3D44EDD2BD9D79C00270053 /* Main.storyboard */,
 				F3D44EE02BD9D79E00270053 /* Assets.xcassets */,
 				F3D44EE22BD9D79E00270053 /* LaunchScreen.storyboard */,
@@ -258,9 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3D44EDC2BD9D79C00270053 /* ViewController.swift in Sources */,
+				F3D44EDC2BD9D79C00270053 /* HomeViewController.swift in Sources */,
 				F3D44ED82BD9D79C00270053 /* AppDelegate.swift in Sources */,
 				F3D44EDA2BD9D79C00270053 /* SceneDelegate.swift in Sources */,
+				F3D44F082BD9FD1200270053 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
