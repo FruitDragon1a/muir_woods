@@ -11,6 +11,14 @@ import MapKit
 class MapViewController: UIViewController {
     @IBOutlet var mapView: MKMapView!
     
+    @IBAction func changeMapView(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            mapView.mapType = .standard
+        } else {
+            mapView.mapType = .satellite
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

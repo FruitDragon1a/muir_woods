@@ -99,8 +99,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pw1-h5-qJW">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pw1-h5-qJW">
                                 <rect key="frame" x="0.0" y="59" width="393" height="666"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Pw1-h5-qJW" secondAttribute="height" multiplier="131:222" id="Reo-6M-XRt"/>
+                                </constraints>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                                 <connections>
                                     <outlet property="delegate" destination="j4Y-Ad-HFj" id="MVb-fi-8LB"/>
@@ -112,6 +115,9 @@
                                     <segment title="Standard"/>
                                     <segment title="Satellite"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeMapView:" destination="j4Y-Ad-HFj" eventType="valueChanged" id="gBi-yX-gLH"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yd0-2j-Zkb"/>
@@ -127,6 +133,7 @@
                             <constraint firstItem="yd0-2j-Zkb" firstAttribute="trailing" secondItem="3cf-fm-Qzq" secondAttribute="trailing" id="aYB-Rb-EN2"/>
                             <constraint firstItem="Pw1-h5-qJW" firstAttribute="top" secondItem="yd0-2j-Zkb" secondAttribute="top" id="jhO-qU-uHk"/>
                             <constraint firstItem="3cf-fm-Qzq" firstAttribute="top" secondItem="Pw1-h5-qJW" secondAttribute="bottom" constant="8" id="p0A-4q-ON4"/>
+                            <constraint firstItem="3cf-fm-Qzq" firstAttribute="top" secondItem="Pw1-h5-qJW" secondAttribute="bottom" constant="666" id="xTj-vb-fIO"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" id="BFd-vK-M3u"/>
@@ -144,6 +151,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="zHT-nA-fOL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nJ6-7W-qJE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
