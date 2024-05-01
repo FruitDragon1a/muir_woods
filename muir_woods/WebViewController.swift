@@ -2,16 +2,22 @@
 //  WebViewController.swift
 //  muir_woods
 //
-//  Created by Ryka Jain on 4/29/24.
+//  Created by Ryka Jain on 4/30/24.
 //
 
 import UIKit
+import WebKit
 
 class WebViewController: UIViewController {
 
+    @IBOutlet var webView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let url = URL(string:"https://www.nps.gov/muwo/index.htm")!
+        
+        webView.load(URLRequest(url:url))
         // Do any additional setup after loading the view.
     }
     

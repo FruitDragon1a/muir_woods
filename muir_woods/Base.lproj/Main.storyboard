@@ -137,7 +137,10 @@
                             <constraint firstItem="kFW-rT-tpv" firstAttribute="leading" secondItem="iVx-67-4j4" secondAttribute="leading" constant="16" id="zPM-eg-KNU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Website" selectedImage="globe" id="7dw-SO-nS0"/>
+                    <tabBarItem key="tabBarItem" title="Website" image="globe" selectedImage="globe" id="7dw-SO-nS0"/>
+                    <connections>
+                        <outlet property="webView" destination="IS1-IF-mMc" id="Eeg-kx-9s4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qyv-2X-qDj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
