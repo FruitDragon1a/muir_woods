@@ -200,6 +200,22 @@
             </objects>
             <point key="canvasLocation" x="912" y="-862"/>
         </scene>
+        <!--Gallery-->
+        <scene sceneID="SlN-m9-pb3">
+            <objects>
+                <viewController id="Czo-ih-nKh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uUG-1M-ghz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GDb-xV-Xg4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gallery" image="film" selectedImage="film" id="Zrl-pv-sLh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QKm-fs-W0l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989" y="-548"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HgW-zw-Utd">
             <objects>
@@ -214,6 +230,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="P7g-w5-C9X"/>
                         <segue destination="j4Y-Ad-HFj" kind="relationship" relationship="viewControllers" id="gEM-cE-DEE"/>
                         <segue destination="6Xc-FB-M4I" kind="relationship" relationship="viewControllers" id="FDu-8f-i62"/>
+                        <segue destination="Czo-ih-nKh" kind="relationship" relationship="viewControllers" id="Lxh-Tp-O50"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGT-Oa-bcs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -225,6 +242,7 @@
         <image name="US-NationalParkService-Logo" width="553" height="720"/>
         <image name="b1830f59-3201-4dc1-8e98-b49a490160a1-banner" width="1600" height="900"/>
         <image name="f7" width="669" height="446"/>
+        <image name="film" width="24" height="24"/>
         <image name="globe" width="24" height="24"/>
         <image name="home" width="24" height="24"/>
         <image name="map" width="24" height="24"/>
